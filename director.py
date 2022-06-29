@@ -1,18 +1,16 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-import json
 
 scope = "playlist-modify-public"
 username = "bennisteinmueller"
 
 discover_weekly_ID = "37i9dQZEVXcDYET2LCFeAo"
-discover_weekly_archive_ID = "2tPmW96s1cZK1OLNAJIwEY"
+discover_weekly_archive_ID = "1jAXcKJmLvHxk9OpMofCEI"
 
 token = SpotifyOAuth(scope=scope, username=username)
 spotifyObject = spotipy.Spotify(auth_manager=token)
 
-
-tracks = spotifyObject.playlist_tracks(
+tracks = spotifyObject.playlist_items(
     discover_weekly_ID,
     fields=None,
     limit=100,
@@ -25,6 +23,5 @@ trackids = []
 
 for i in range(30):
     trackids.append(tracks["items"][i]["track"]["uri"])
-
 
 spotifyObject.playlist_add_items(discover_weekly_archive_ID, trackids, position=None)
