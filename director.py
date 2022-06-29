@@ -1,5 +1,8 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import cover_creator
+import base64
+
 
 scope = "playlist-modify-public"
 username = "bennisteinmueller"
@@ -29,3 +32,17 @@ for i in range(length):
 spotifyObject.playlist_add_items(discover_weekly_archive_ID, trackids, position=None)
 
 print("Added new songs to your Discover Weekly Archive")
+
+#Create Cover and updating cover image
+
+#scope = "ugc-image-upload"
+#token = SpotifyOAuth(scope=scope, username=username)
+#spotifyObject = spotipy.Spotify(auth_manager=token)
+#
+#
+#cover_creator.create_cover()
+#encoded = base64.b64encode(open("cover.jpeg", "rb").read())
+#spotifyObject.playlist_upload_cover_image("1jAXcKJmLvHxk9OpMofCEI", encoded)
+#print("Cover updated")
+
+
