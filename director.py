@@ -21,7 +21,11 @@ tracks = spotifyObject.playlist_items(
 
 trackids = []
 
-for i in range(30):
+length = len(tracks["items"])
+
+for i in range(length):
     trackids.append(tracks["items"][i]["track"]["uri"])
 
 spotifyObject.playlist_add_items(discover_weekly_archive_ID, trackids, position=None)
+
+print("Added new songs to your Discover Weekly Archive")
