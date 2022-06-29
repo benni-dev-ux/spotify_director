@@ -1,13 +1,12 @@
-from PIL import Image, ImageDraw, ImageFont
 from datetime import date
+
+from PIL import Image, ImageDraw, ImageFont
 
 width = 512
 height = 512
 
 
-
 def create_cover():
-
     last_changed = date.today()
 
     title = "Discover Weekly Archive"
