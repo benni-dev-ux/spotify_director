@@ -19,6 +19,8 @@ creds.txt
 .idea/**/shelf
 
 .idea/*
+__pycache__
+
 
 # AWS User-specific
 .idea/**/aws.xml
