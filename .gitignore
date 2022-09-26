@@ -10,6 +10,7 @@
 spotifyApp/**
 creds.txt
 .cache-bennisteinmueller
+Pipfile.lock
 
 # User-specific stuff
 .idea/**/workspace.xml
