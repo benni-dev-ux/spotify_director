@@ -1,6 +1,8 @@
 # Spotify Director
 
-Using the Spotify API via ![spotipy](https://github.com/plamere/spotipy) to copy songs from the automatically generated 'Discover Weekly' playlist to an archive.
+Simple utility tool to copy songs from the automatically generated 'Discover Weekly' playlist to an archive.
+
+Accessing the Spotify API via ![spotipy](https://github.com/plamere/spotipy).
 
 ![Application Screenshot](doc/screen2.png)
 
